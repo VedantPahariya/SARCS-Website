@@ -1,0 +1,111 @@
+[
+  {
+    "id": "proj-imc",
+    "slug": "in-memory-computing",
+    "title": "In-Memory Computing",
+    "shortDescription": "Developing novel computing paradigms that perform computation directly within memory arrays to overcome the von Neumann bottleneck.",
+    "fullDescription": "In-memory computing (IMC) represents a paradigm shift in computer architecture by performing computations directly within memory arrays, eliminating costly data movement between memory and processing units. Our research focuses on developing efficient IMC architectures for machine learning workloads, exploring both analog and digital implementations using emerging non-volatile memory technologies such as ReRAM, PCM, and MRAM.",
+    "image": "/images/projects/in-memory-computing.svg",
+    "topics": [
+      "Analog and digital in-memory computing architectures",
+      "ReRAM and MRAM-based compute-in-memory designs",
+      "Neural network accelerators using IMC",
+      "Energy-efficient inference engines",
+      "Reliability and variation tolerance in IMC systems",
+      "Hardware-software co-design for IMC"
+    ],
+    "links": {
+      "github": "https://github.com/sarcs-lab/imc-accelerator",
+      "paper": "https://arxiv.org/abs/xxxx.xxxxx",
+      "documentation": "https://sarcs-lab.github.io/imc-docs"
+    },
+    "status": "active",
+    "startYear": 2022
+  },
+  {
+    "id": "proj-riscv",
+    "slug": "riscv-architectures",
+    "title": "RISC-V Architectures",
+    "shortDescription": "Designing and implementing custom RISC-V processors and extensions for specialized computing applications.",
+    "fullDescription": "RISC-V is an open-source instruction set architecture that enables innovation in processor design. Our lab develops custom RISC-V cores with specialized extensions for various application domains, including edge AI, cryptography, and signal processing. We also contribute to the RISC-V ecosystem through tools, simulators, and educational resources.",
+    "image": "/images/projects/riscv.svg",
+    "topics": [
+      "Custom RISC-V core implementations",
+      "Vector and matrix extension development",
+      "Security extensions for trusted computing",
+      "Low-power RISC-V designs for IoT",
+      "RISC-V simulation and verification tools",
+      "Open-source processor development"
+    ],
+    "links": {
+      "github": "https://github.com/sarcs-lab/riscv-core",
+      "documentation": "https://sarcs-lab.github.io/riscv-docs"
+    },
+    "status": "active",
+    "startYear": 2020
+  },
+  {
+    "id": "proj-accelerators",
+    "slug": "hardware-accelerators",
+    "title": "Hardware Accelerators",
+    "shortDescription": "Building domain-specific accelerators for AI, cryptography, and scientific computing applications.",
+    "fullDescription": "Domain-specific hardware accelerators provide orders of magnitude improvement in performance and energy efficiency compared to general-purpose processors. Our research develops accelerator architectures for emerging applications including deep learning training and inference, post-quantum cryptography, and scientific simulations. We employ FPGA prototyping and ASIC design methodologies.",
+    "image": "/images/projects/accelerators.svg",
+    "topics": [
+      "Deep learning accelerator architectures",
+      "Post-quantum cryptography accelerators",
+      "Sparse matrix computation engines",
+      "FPGA-based prototyping platforms",
+      "Systolic array designs",
+      "Dataflow architectures"
+    ],
+    "links": {
+      "github": "https://github.com/sarcs-lab/dla-framework"
+    },
+    "status": "active",
+    "startYear": 2021
+  },
+  {
+    "id": "proj-signal",
+    "slug": "signal-processing",
+    "title": "Signal Processing Systems",
+    "shortDescription": "Efficient hardware implementations for real-time signal processing and communications.",
+    "fullDescription": "Signal processing is fundamental to communications, radar, medical imaging, and numerous other applications. Our research develops efficient hardware architectures for real-time signal processing, including FFT engines, filter banks, and software-defined radio platforms. We focus on both algorithmic optimizations and hardware implementations.",
+    "image": "/images/projects/signal-processing.svg",
+    "topics": [
+      "High-performance FFT architectures",
+      "Adaptive filter implementations",
+      "Software-defined radio platforms",
+      "Radar signal processing",
+      "Audio and speech processing hardware",
+      "Low-latency communication systems"
+    ],
+    "links": {
+      "github": "https://github.com/sarcs-lab/dsp-cores"
+    },
+    "status": "ongoing",
+    "startYear": 2019
+  },
+  {
+    "id": "proj-ai-systems",
+    "slug": "ai-systems",
+    "title": "AI Systems",
+    "shortDescription": "End-to-end AI system design from algorithms to efficient hardware implementations.",
+    "fullDescription": "Modern AI systems require holistic optimization across the entire stack from algorithms to hardware. Our research takes a systems approach to AI, developing efficient neural network architectures, model compression techniques, and optimized hardware implementations. We focus on enabling AI at the edge with strict power and latency constraints.",
+    "image": "/images/projects/ai-systems.svg",
+    "topics": [
+      "Neural architecture search for hardware efficiency",
+      "Model quantization and pruning",
+      "Edge AI deployment frameworks",
+      "Efficient transformer architectures",
+      "On-device learning systems",
+      "AI compiler optimizations"
+    ],
+    "links": {
+      "github": "https://github.com/sarcs-lab/edge-ai-toolkit",
+      "demo": "https://sarcs-lab.github.io/ai-demo"
+    },
+    "status": "active",
+    "startYear": 2023
+  }
+]

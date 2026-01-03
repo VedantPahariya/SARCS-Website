@@ -1,0 +1,56 @@
+[
+  {
+    "id": "news-1",
+    "date": "2025-12-15",
+    "title": "Paper Accepted at ISCA 2026",
+    "description": "Our paper on 'Energy-Efficient In-Memory Computing Architectures for Deep Learning Inference' has been accepted at the International Symposium on Computer Architecture (ISCA) 2026.",
+    "link": "https://example.com/isca-2026",
+    "type": "publication",
+    "pinned": true
+  },
+  {
+    "id": "news-2",
+    "date": "2025-11-20",
+    "title": "Best Paper Award at DATE 2025",
+    "description": "Congratulations to our team for receiving the Best Paper Award at the Design, Automation and Test in Europe (DATE) 2025 conference.",
+    "type": "award",
+    "pinned": true
+  },
+  {
+    "id": "news-3",
+    "date": "2025-10-05",
+    "title": "New PhD Students Join the Lab",
+    "description": "We welcome three new PhD students to the SARCS Lab this fall semester. Looking forward to exciting research collaborations!",
+    "type": "announcement"
+  },
+  {
+    "id": "news-4",
+    "date": "2025-09-15",
+    "title": "Invited Talk at MIT",
+    "description": "Prof. Smith delivered an invited talk on 'Future of RISC-V in Edge Computing' at MIT's Computer Science Colloquium.",
+    "link": "https://example.com/mit-talk",
+    "type": "talk"
+  },
+  {
+    "id": "news-5",
+    "date": "2025-08-01",
+    "title": "NSF Grant Awarded",
+    "description": "Our lab has been awarded a $1.2M NSF grant for research on 'Secure and Efficient Hardware Accelerators for Post-Quantum Cryptography'.",
+    "type": "announcement"
+  },
+  {
+    "id": "news-6",
+    "date": "2025-07-10",
+    "title": "Summer Internship Program Concludes",
+    "description": "Our summer internship program concluded with excellent presentations from 8 undergraduate researchers. Great work everyone!",
+    "type": "event"
+  },
+  {
+    "id": "news-7",
+    "date": "2025-06-20",
+    "title": "Featured in IEEE Spectrum",
+    "description": "Our research on neuromorphic computing was featured in IEEE Spectrum's article on 'The Future of Brain-Inspired Computing'.",
+    "link": "https://spectrum.ieee.org/example",
+    "type": "media"
+  }
+]

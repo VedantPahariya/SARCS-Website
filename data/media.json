@@ -1,0 +1,81 @@
+[
+  {
+    "id": "media-1",
+    "src": "/images/gallery/lab-group-2025.svg",
+    "alt": "SARCS Lab group photo taken in Fall 2025",
+    "caption": "Lab group photo - Fall 2025",
+    "category": "group",
+    "date": "2025-10-15",
+    "event": "Annual Lab Retreat"
+  },
+  {
+    "id": "media-2",
+    "src": "/images/gallery/isca-2025-presentation.svg",
+    "alt": "Alice presenting at ISCA 2025 conference",
+    "caption": "Alice Johnson presenting at ISCA 2025",
+    "category": "conference",
+    "date": "2025-06-20",
+    "event": "ISCA 2025"
+  },
+  {
+    "id": "media-3",
+    "src": "/images/gallery/best-paper-award.svg",
+    "alt": "Team receiving Best Paper Award at DATE 2025",
+    "caption": "Best Paper Award at DATE 2025",
+    "category": "award",
+    "date": "2025-03-28",
+    "event": "DATE 2025"
+  },
+  {
+    "id": "media-4",
+    "src": "/images/gallery/lab-workspace.svg",
+    "alt": "SARCS Lab workspace with equipment and workstations",
+    "caption": "Our lab workspace",
+    "category": "lab",
+    "date": "2025-01-10"
+  },
+  {
+    "id": "media-5",
+    "src": "/images/gallery/invited-talk-mit.svg",
+    "alt": "Prof. Smith giving invited talk at MIT",
+    "caption": "Invited talk at MIT Computer Science Colloquium",
+    "category": "talk",
+    "date": "2025-09-15",
+    "event": "MIT CS Colloquium"
+  },
+  {
+    "id": "media-6",
+    "src": "/images/gallery/summer-interns-2025.svg",
+    "alt": "Summer 2025 intern cohort group photo",
+    "caption": "Summer 2025 Intern Cohort",
+    "category": "group",
+    "date": "2025-08-01",
+    "event": "Summer Internship Program"
+  },
+  {
+    "id": "media-7",
+    "src": "/images/gallery/chip-tapeout.svg",
+    "alt": "Team celebrating successful chip tapeout",
+    "caption": "Celebrating our chip tapeout!",
+    "category": "event",
+    "date": "2025-04-15",
+    "event": "Chip Tapeout Celebration"
+  },
+  {
+    "id": "media-8",
+    "src": "/images/gallery/lab-equipment.svg",
+    "alt": "Lab testing equipment and measurement setup",
+    "caption": "Testing and measurement equipment",
+    "category": "lab",
+    "date": "2024-12-01"
+  },
+  {
+    "id": "media-9",
+    "src": "/images/gallery/workshop-2024.svg",
+    "alt": "Hands-on RISC-V workshop for students",
+    "caption": "RISC-V Hands-on Workshop",
+    "category": "event",
+    "date": "2024-11-20",
+    "event": "RISC-V Workshop"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "res-1",
+    "title": "IMC Accelerator Framework",
+    "description": "Open-source framework for designing and simulating in-memory computing accelerators. Includes cycle-accurate simulators and RTL generators.",
+    "category": "Open Source Tools",
+    "link": "https://github.com/sarcs-lab/imc-accelerator",
+    "type": "github",
+    "tags": ["In-Memory Computing", "Simulator", "RTL"]
+  },
+  {
+    "id": "res-2",
+    "title": "RISC-V Core Collection",
+    "description": "Collection of custom RISC-V processor cores with various extensions. Includes documentation, testbenches, and FPGA support.",
+    "category": "Code Repositories",
+    "link": "https://github.com/sarcs-lab/riscv-cores",
+    "type": "github",
+    "tags": ["RISC-V", "Processor Design", "Verilog"]
+  },
+  {
+    "id": "res-3",
+    "title": "Edge AI Toolkit",
+    "description": "Tools for deploying neural networks on edge devices. Includes quantization, pruning, and optimization utilities.",
+    "category": "Open Source Tools",
+    "link": "https://github.com/sarcs-lab/edge-ai-toolkit",
+    "type": "github",
+    "tags": ["AI Systems", "Edge Computing", "Model Optimization"]
+  },
+  {
+    "id": "res-4",
+    "title": "Hardware-Aware NAS Benchmark",
+    "description": "Benchmark dataset and evaluation framework for hardware-aware neural architecture search methods.",
+    "category": "Datasets",
+    "link": "https://github.com/sarcs-lab/hw-nas-benchmark",
+    "type": "dataset",
+    "tags": ["NAS", "Benchmark", "Machine Learning"]
+  },
+  {
+    "id": "res-5",
+    "title": "PQC Accelerator RTL",
+    "description": "RTL implementation of post-quantum cryptography accelerators for Kyber and Dilithium algorithms.",
+    "category": "Code Repositories",
+    "link": "https://github.com/sarcs-lab/pqc-accelerator",
+    "type": "github",
+    "tags": ["Cryptography", "FPGA", "Security"]
+  },
+  {
+    "id": "res-6",
+    "title": "In-Memory Computing Survey (PDF)",
+    "description": "Comprehensive survey paper on in-memory computing architectures for machine learning applications.",
+    "category": "Publications",
+    "link": "/papers/pieee-2023-imc-survey.pdf",
+    "type": "pdf",
+    "tags": ["Survey", "In-Memory Computing"]
+  },
+  {
+    "id": "res-7",
+    "title": "RISC-V Tutorial Slides",
+    "description": "Tutorial slides from our RISC-V workshop covering architecture basics, toolchain setup, and hands-on exercises.",
+    "category": "Tutorials",
+    "link": "/slides/riscv-tutorial-2024.pdf",
+    "type": "pdf",
+    "tags": ["RISC-V", "Tutorial", "Education"]
+  },
+  {
+    "id": "res-8",
+    "title": "DSP Cores Library",
+    "description": "Reusable digital signal processing cores including FFT, FIR filters, and CORDIC implementations.",
+    "category": "Code Repositories",
+    "link": "https://github.com/sarcs-lab/dsp-cores",
+    "type": "github",
+    "tags": ["Signal Processing", "RTL", "FPGA"]
+  },
+  {
+    "id": "res-9",
+    "title": "IMC Characterization Dataset",
+    "description": "Measurement data from ReRAM and MRAM device characterization for in-memory computing research.",
+    "category": "Datasets",
+    "link": "https://github.com/sarcs-lab/imc-device-data",
+    "type": "dataset",
+    "tags": ["In-Memory Computing", "Device Characterization", "ReRAM"]
+  },
+  {
+    "id": "res-10",
+    "title": "Lab Documentation Wiki",
+    "description": "Internal documentation covering lab tools, workflows, and best practices. Useful for new lab members.",
+    "category": "Documentation",
+    "link": "https://github.com/sarcs-lab/lab-wiki",
+    "type": "documentation",
+    "tags": ["Documentation", "Onboarding"]
+  }
+]

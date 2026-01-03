@@ -1,0 +1,56 @@
+[
+  {
+    "id": "opening-1",
+    "title": "PhD Positions in In-Memory Computing",
+    "type": "PhD",
+    "description": "We are looking for motivated PhD students to work on next-generation in-memory computing architectures. Ideal candidates should have a strong background in computer architecture, digital design, or machine learning.",
+    "requirements": [
+      "MS or equivalent in Computer Science, Electrical Engineering, or related field",
+      "Strong programming skills in Python and C/C++",
+      "Experience with HDL (Verilog/VHDL) preferred",
+      "Knowledge of computer architecture fundamentals",
+      "Strong communication and writing skills"
+    ],
+    "deadline": "2026-03-15",
+    "isOpen": true,
+    "contactEmail": "sarcs-phd@example.edu"
+  },
+  {
+    "id": "opening-2",
+    "title": "PhD Positions in RISC-V Architecture",
+    "type": "PhD",
+    "description": "Openings for PhD students interested in custom RISC-V processor design, including security extensions and domain-specific accelerators.",
+    "requirements": [
+      "MS or equivalent in Computer Science or Electrical Engineering",
+      "Experience with processor design and verification",
+      "Proficiency in Verilog or SystemVerilog",
+      "Familiarity with RISC-V ISA is a plus"
+    ],
+    "deadline": "2026-03-15",
+    "isOpen": true,
+    "contactEmail": "sarcs-phd@example.edu"
+  },
+  {
+    "id": "opening-3",
+    "title": "Summer Research Internship 2026",
+    "type": "Internship",
+    "description": "10-12 week summer research internship for undergraduate and MS students. Work on cutting-edge research projects in computer architecture and AI systems.",
+    "requirements": [
+      "Currently enrolled in BS or MS program",
+      "GPA of 3.5 or above",
+      "Background in computer architecture or machine learning",
+      "Available for full-time research during summer"
+    ],
+    "deadline": "2026-02-01",
+    "isOpen": true,
+    "contactEmail": "sarcs-internship@example.edu"
+  },
+  {
+    "id": "opening-4",
+    "title": "Research Collaborations",
+    "type": "Collaboration",
+    "description": "We welcome research collaborations with academic institutions and industry partners. Areas of interest include in-memory computing, RISC-V, and AI hardware.",
+    "isOpen": true,
+    "contactEmail": "john.smith@example.edu"
+  }
+]

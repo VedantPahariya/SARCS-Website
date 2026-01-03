@@ -1,0 +1,41 @@
+{
+  "lab": {
+    "name": "SARCS Lab",
+    "fullName": "Systems Architecture and Research Computing Systems Laboratory",
+    "logo": "/images/logo.svg",
+    "mission": "The SARCS Laboratory is dedicated to advancing the frontiers of computer architecture, hardware-software co-design, and emerging computing paradigms. Our research spans in-memory computing, RISC-V architectures, hardware accelerators, and AI systems, with a focus on developing efficient, scalable, and sustainable computing solutions for next-generation applications.",
+    "address": [
+      "Room 123, Research Building",
+      "Department of Computer Science",
+      "Example University",
+      "City, State 12345",
+      "Country"
+    ],
+    "email": "sarcs-lab@example.edu",
+    "phone": "+1 (123) 456-7890",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/professor-name",
+      "twitter": "https://twitter.com/sarcs_lab",
+      "github": "https://github.com/sarcs-lab",
+      "googleScholar": "https://scholar.google.com/citations?user=PLACEHOLDER",
+      "youtube": "https://youtube.com/@sarcs-lab"
+    },
+    "affiliations": [
+      {
+        "name": "Example University",
+        "logo": "/images/affiliations/university.svg",
+        "url": "https://example.edu"
+      },
+      {
+        "name": "Research Institute",
+        "logo": "/images/affiliations/institute.svg",
+        "url": "https://research-institute.org"
+      },
+      {
+        "name": "Industry Partner",
+        "logo": "/images/affiliations/partner.svg",
+        "url": "https://industry-partner.com"
+      }
+    ]
+  }
+}

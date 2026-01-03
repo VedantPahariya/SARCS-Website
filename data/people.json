@@ -1,0 +1,184 @@
+{
+  "faculty": [
+    {
+      "id": "faculty-1",
+      "name": "Prof. John Smith",
+      "photo": "/images/people/john-smith.svg",
+      "role": "faculty",
+      "designation": "Associate Professor, Principal Investigator",
+      "bio": "Prof. John Smith leads the SARCS Laboratory at Example University. His research interests span computer architecture, in-memory computing, and hardware accelerators. He received his PhD from Stanford University and has published over 100 papers in top venues. He is a recipient of the NSF CAREER Award and IEEE TCCA Young Computer Architect Award.",
+      "researchInterests": ["In-Memory Computing", "RISC-V", "Hardware Accelerators", "AI Systems"],
+      "links": {
+        "email": "john.smith@example.edu",
+        "linkedin": "https://linkedin.com/in/john-smith",
+        "googleScholar": "https://scholar.google.com/citations?user=PLACEHOLDER",
+        "github": "https://github.com/johnsmith",
+        "twitter": "https://twitter.com/johnsmith",
+        "website": "https://johnsmith.example.edu",
+        "orcid": "https://orcid.org/0000-0000-0000-0000"
+      }
+    }
+  ],
+  "phd": [
+    {
+      "id": "phd-1",
+      "name": "Alice Johnson",
+      "photo": "/images/people/alice-johnson.svg",
+      "role": "phd",
+      "designation": "PhD Candidate",
+      "program": "PhD",
+      "yearJoined": 2021,
+      "researchInterests": ["In-Memory Computing", "ReRAM", "Neural Network Accelerators"],
+      "links": {
+        "email": "alice.johnson@example.edu",
+        "linkedin": "https://linkedin.com/in/alice-johnson",
+        "googleScholar": "https://scholar.google.com/citations?user=PLACEHOLDER",
+        "github": "https://github.com/alicejohnson"
+      }
+    },
+    {
+      "id": "phd-2",
+      "name": "Bob Williams",
+      "photo": "/images/people/bob-williams.svg",
+      "role": "phd",
+      "designation": "PhD Student",
+      "program": "PhD",
+      "yearJoined": 2022,
+      "researchInterests": ["RISC-V", "Hardware Security", "Trusted Execution"],
+      "links": {
+        "email": "bob.williams@example.edu",
+        "linkedin": "https://linkedin.com/in/bob-williams",
+        "github": "https://github.com/bobwilliams"
+      }
+    },
+    {
+      "id": "phd-3",
+      "name": "Carol Davis",
+      "photo": "/images/people/carol-davis.svg",
+      "role": "phd",
+      "designation": "PhD Student",
+      "program": "PhD",
+      "yearJoined": 2023,
+      "researchInterests": ["AI Systems", "Neural Architecture Search", "Edge Computing"],
+      "links": {
+        "email": "carol.davis@example.edu",
+        "linkedin": "https://linkedin.com/in/carol-davis",
+        "github": "https://github.com/caroldavis"
+      }
+    }
+  ],
+  "masters": [
+    {
+      "id": "ms-1",
+      "name": "David Lee",
+      "photo": "/images/people/david-lee.svg",
+      "role": "masters",
+      "designation": "MS Student",
+      "program": "MS",
+      "yearJoined": 2024,
+      "researchInterests": ["Signal Processing", "FPGA Design", "5G Systems"],
+      "links": {
+        "email": "david.lee@example.edu",
+        "linkedin": "https://linkedin.com/in/david-lee",
+        "github": "https://github.com/davidlee"
+      }
+    },
+    {
+      "id": "ms-2",
+      "name": "Eve Martinez",
+      "photo": "/images/people/eve-martinez.svg",
+      "role": "masters",
+      "designation": "MS Student",
+      "program": "MS",
+      "yearJoined": 2024,
+      "researchInterests": ["Cryptography", "RISC-V", "Low-Power Design"],
+      "links": {
+        "email": "eve.martinez@example.edu",
+        "linkedin": "https://linkedin.com/in/eve-martinez",
+        "github": "https://github.com/evemartinez"
+      }
+    }
+  ],
+  "undergraduate": [
+    {
+      "id": "ug-1",
+      "name": "Frank Chen",
+      "photo": "/images/people/frank-chen.svg",
+      "role": "undergraduate",
+      "designation": "Undergraduate Researcher",
+      "program": "BTech",
+      "yearJoined": 2025,
+      "researchInterests": ["Machine Learning", "Model Compression"],
+      "links": {
+        "email": "frank.chen@example.edu",
+        "github": "https://github.com/frankchen"
+      }
+    },
+    {
+      "id": "ug-2",
+      "name": "Grace Wang",
+      "photo": "/images/people/grace-wang.svg",
+      "role": "undergraduate",
+      "designation": "Undergraduate Researcher",
+      "program": "BTech",
+      "yearJoined": 2025,
+      "researchInterests": ["Signal Processing", "Hardware Design"],
+      "links": {
+        "email": "grace.wang@example.edu",
+        "github": "https://github.com/gracewang"
+      }
+    }
+  ],
+  "alumni": [
+    {
+      "id": "alumni-1",
+      "name": "Dr. Henry Brown",
+      "photo": "/images/people/henry-brown.svg",
+      "role": "alumni",
+      "designation": "PhD Graduate",
+      "graduationYear": 2024,
+      "currentAffiliation": "Research Scientist at NVIDIA",
+      "links": {
+        "linkedin": "https://linkedin.com/in/henry-brown",
+        "googleScholar": "https://scholar.google.com/citations?user=PLACEHOLDER"
+      }
+    },
+    {
+      "id": "alumni-2",
+      "name": "Dr. Isabella Kim",
+      "photo": "/images/people/isabella-kim.svg",
+      "role": "alumni",
+      "designation": "PhD Graduate",
+      "graduationYear": 2023,
+      "currentAffiliation": "Assistant Professor at MIT",
+      "links": {
+        "linkedin": "https://linkedin.com/in/isabella-kim",
+        "website": "https://isabella-kim.mit.edu"
+      }
+    },
+    {
+      "id": "alumni-3",
+      "name": "James Park",
+      "photo": "/images/people/james-park.svg",
+      "role": "alumni",
+      "designation": "MS Graduate",
+      "graduationYear": 2024,
+      "currentAffiliation": "Hardware Engineer at Apple",
+      "links": {
+        "linkedin": "https://linkedin.com/in/james-park"
+      }
+    },
+    {
+      "id": "alumni-4",
+      "name": "Karen Liu",
+      "photo": "/images/people/karen-liu.svg",
+      "role": "alumni",
+      "designation": "MS Graduate",
+      "graduationYear": 2023,
+      "currentAffiliation": "ML Engineer at Google",
+      "links": {
+        "linkedin": "https://linkedin.com/in/karen-liu"
+      }
+    }
+  ]
+}

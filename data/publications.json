@@ -1,0 +1,147 @@
+[
+  {
+    "id": "pub-1",
+    "title": "Energy-Efficient In-Memory Computing Architectures for Deep Learning Inference",
+    "authors": ["John Smith", "Alice Johnson", "Bob Williams", "Carol Davis"],
+    "venue": "International Symposium on Computer Architecture (ISCA)",
+    "year": 2026,
+    "abstract": "This paper presents a novel in-memory computing architecture that achieves 10x energy efficiency improvement for deep learning inference workloads. We propose a hybrid analog-digital computing scheme that leverages ReRAM crossbar arrays while maintaining high accuracy through adaptive precision control. Our architecture demonstrates state-of-the-art results on ImageNet classification with only 2% accuracy degradation compared to full-precision baselines.",
+    "tags": ["In-Memory Computing", "Deep Learning", "Energy Efficiency", "ReRAM"],
+    "links": {
+      "pdf": "/papers/isca-2026-imc.pdf",
+      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
+      "code": "https://github.com/sarcs-lab/imc-accelerator",
+      "doi": "https://doi.org/10.1145/xxxxxx"
+    },
+    "type": "conference"
+  },
+  {
+    "id": "pub-2",
+    "title": "SecureRISC: A RISC-V Processor with Hardware Security Extensions for Trusted Execution",
+    "authors": ["Bob Williams", "John Smith", "Eve Martinez"],
+    "venue": "IEEE/ACM International Symposium on Microarchitecture (MICRO)",
+    "year": 2025,
+    "abstract": "We present SecureRISC, a RISC-V processor implementation featuring comprehensive hardware security extensions for trusted execution environments. Our design includes memory encryption, secure boot mechanisms, and side-channel resistant execution modes. We demonstrate the effectiveness of our approach against various attack vectors while maintaining less than 15% performance overhead.",
+    "tags": ["RISC-V", "Hardware Security", "Trusted Execution", "Side-Channel Attacks"],
+    "links": {
+      "pdf": "/papers/micro-2025-securerisc.pdf",
+      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
+      "code": "https://github.com/sarcs-lab/securerisc"
+    },
+    "type": "conference"
+  },
+  {
+    "id": "pub-3",
+    "title": "Sparse Matrix Accelerator Design for Scientific Computing Applications",
+    "authors": ["Alice Johnson", "David Lee", "John Smith"],
+    "venue": "Design, Automation and Test in Europe (DATE)",
+    "year": 2025,
+    "abstract": "Scientific computing applications frequently involve large sparse matrices. This paper presents a flexible accelerator architecture optimized for sparse matrix operations including SpMV, SpMM, and sparse solvers. Our design achieves 5x speedup over GPU implementations while consuming 8x less energy through novel dataflow optimizations and compressed data formats.",
+    "tags": ["Hardware Accelerators", "Sparse Computing", "Scientific Computing"],
+    "links": {
+      "pdf": "/papers/date-2025-sparse.pdf",
+      "slides": "/slides/date-2025-presentation.pdf"
+    },
+    "type": "conference"
+  },
+  {
+    "id": "pub-4",
+    "title": "Neural Architecture Search for Hardware-Efficient Edge AI",
+    "authors": ["Carol Davis", "John Smith", "Frank Chen"],
+    "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)",
+    "year": 2025,
+    "abstract": "Deploying neural networks on edge devices requires careful consideration of hardware constraints. We propose a hardware-aware neural architecture search framework that directly optimizes for latency, energy, and memory usage on target edge platforms. Our approach discovers architectures that achieve Pareto-optimal trade-offs between accuracy and hardware efficiency.",
+    "tags": ["AI Systems", "Neural Architecture Search", "Edge Computing", "Model Optimization"],
+    "links": {
+      "pdf": "/papers/tcad-2025-nas.pdf",
+      "code": "https://github.com/sarcs-lab/hw-nas",
+      "doi": "https://doi.org/10.1109/xxxxxx"
+    },
+    "type": "journal"
+  },
+  {
+    "id": "pub-5",
+    "title": "Low-Power RISC-V Vector Processor for IoT Edge Inference",
+    "authors": ["Eve Martinez", "Bob Williams", "John Smith"],
+    "venue": "IEEE International Solid-State Circuits Conference (ISSCC)",
+    "year": 2024,
+    "abstract": "This paper presents a low-power RISC-V processor with custom vector extensions optimized for neural network inference on IoT devices. Fabricated in 22nm FD-SOI technology, our processor achieves 10 TOPS/W efficiency while supporting flexible precision from INT2 to FP16. The chip operates from 0.5V to 1.0V enabling dynamic voltage-frequency scaling.",
+    "tags": ["RISC-V", "IoT", "Low Power", "Vector Processing"],
+    "links": {
+      "pdf": "/papers/isscc-2024-riscv-vector.pdf",
+      "doi": "https://doi.org/10.1109/xxxxxx"
+    },
+    "type": "conference"
+  },
+  {
+    "id": "pub-6",
+    "title": "ReRAM-Based Computing-in-Memory Architecture with Adaptive Precision",
+    "authors": ["Alice Johnson", "John Smith"],
+    "venue": "ACM/IEEE Design Automation Conference (DAC)",
+    "year": 2024,
+    "abstract": "We present an adaptive precision computing-in-memory architecture based on ReRAM technology. Our design dynamically adjusts computational precision based on layer sensitivity analysis, achieving optimal energy-accuracy trade-offs. Evaluated on various CNN models, we demonstrate 3x energy reduction with minimal accuracy loss.",
+    "tags": ["In-Memory Computing", "ReRAM", "Adaptive Precision", "CNN"],
+    "links": {
+      "pdf": "/papers/dac-2024-reram.pdf",
+      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx"
+    },
+    "type": "conference"
+  },
+  {
+    "id": "pub-7",
+    "title": "High-Throughput FFT Architecture for 5G Signal Processing",
+    "authors": ["David Lee", "John Smith", "Grace Wang"],
+    "venue": "IEEE Journal of Solid-State Circuits (JSSC)",
+    "year": 2024,
+    "abstract": "Fifth-generation wireless systems require high-throughput FFT processing with stringent latency requirements. We present an area-efficient pipelined FFT architecture supporting variable-length transforms from 64 to 4096 points. Our design achieves 10 Gsamples/s throughput with sub-microsecond latency, meeting 5G NR specifications.",
+    "tags": ["Signal Processing", "5G", "FFT", "Wireless"],
+    "links": {
+      "pdf": "/papers/jssc-2024-fft.pdf",
+      "doi": "https://doi.org/10.1109/xxxxxx"
+    },
+    "type": "journal"
+  },
+  {
+    "id": "pub-8",
+    "title": "Post-Quantum Cryptography Accelerator on FPGA",
+    "authors": ["Eve Martinez", "Alice Johnson", "John Smith"],
+    "venue": "IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES)",
+    "year": 2024,
+    "abstract": "With the advent of quantum computing, transitioning to post-quantum cryptographic algorithms is essential. This paper presents an FPGA-based accelerator for lattice-based cryptography schemes including Kyber and Dilithium. Our design achieves significant speedup over software implementations while maintaining constant-time execution for side-channel resistance.",
+    "tags": ["Hardware Accelerators", "Post-Quantum Cryptography", "FPGA", "Lattice Cryptography"],
+    "links": {
+      "pdf": "/papers/tches-2024-pqc.pdf",
+      "code": "https://github.com/sarcs-lab/pqc-accelerator"
+    },
+    "type": "journal"
+  },
+  {
+    "id": "pub-9",
+    "title": "Efficient Transformer Inference on Edge Devices",
+    "authors": ["Carol Davis", "Frank Chen", "John Smith"],
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
+    "year": 2023,
+    "abstract": "Transformer models have achieved remarkable success but are computationally expensive for edge deployment. We propose a co-designed approach combining structured pruning, quantization-aware training, and attention pattern optimization specifically for edge hardware. Our method enables BERT inference on microcontrollers with 50x compression and only 2% accuracy drop.",
+    "tags": ["AI Systems", "Transformers", "Edge Computing", "Model Compression"],
+    "links": {
+      "pdf": "/papers/neurips-2023-transformers.pdf",
+      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
+      "code": "https://github.com/sarcs-lab/edge-transformers"
+    },
+    "type": "conference"
+  },
+  {
+    "id": "pub-10",
+    "title": "A Survey of In-Memory Computing Architectures for Machine Learning",
+    "authors": ["John Smith", "Alice Johnson"],
+    "venue": "Proceedings of the IEEE",
+    "year": 2023,
+    "abstract": "In-memory computing has emerged as a promising approach to address the memory wall problem in machine learning workloads. This survey provides a comprehensive overview of in-memory computing architectures, covering both analog and digital approaches across various memory technologies. We discuss design challenges, accuracy considerations, and future research directions.",
+    "tags": ["In-Memory Computing", "Machine Learning", "Survey", "Memory Technologies"],
+    "links": {
+      "pdf": "/papers/pieee-2023-imc-survey.pdf",
+      "doi": "https://doi.org/10.1109/xxxxxx"
+    },
+    "type": "journal"
+  }
+]
