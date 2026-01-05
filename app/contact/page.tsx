@@ -40,13 +40,13 @@ export default function ContactPage() {
 
       {/* Contact Info Section */}
       <Section>
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-4xl">
           <SectionHeader
             title="Get in Touch"
             subtitle="We'd love to hear from you."
             align="center"
           />
-          <div className="flex justify-center">
+          <div className="mx-auto max-w-2xl">
             <ContactInfo
               address={labInfo.address}
               email={labInfo.email}
@@ -58,7 +58,7 @@ export default function ContactPage() {
 
       {/* Openings Section */}
       <Section className="pt-0">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-4xl">
           <SectionHeader
             title="Join Our Team"
             subtitle="Current openings and opportunities."

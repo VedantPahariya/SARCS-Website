@@ -37,7 +37,7 @@ export default function BlogPage() {
 
       {/* Blog Section - Center Aligned */}
       <Section>
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-5xl">
           <BlogList posts={blogPosts} />
         </div>
       </Section>

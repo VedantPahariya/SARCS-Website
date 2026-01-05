@@ -36,10 +36,10 @@ export function BlogCard({ post, imagePosition = 'left' }: BlogCardProps) {
     <Card hover className="group overflow-hidden">
       <div className={`flex flex-col gap-6 md:flex-row ${isRight ? 'md:flex-row-reverse' : ''}`}>
         {/* Image Section */}
-        <div className="relative h-48 w-full flex-shrink-0 overflow-hidden rounded-xl bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 md:h-auto md:w-56">
+        <div className="relative h-64 w-full flex-shrink-0 overflow-hidden rounded-xl bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 md:h-auto md:w-80">
           {/* PLACEHOLDER: Replace with actual blog post image */}
-          <div className="flex h-full min-h-[12rem] w-full items-center justify-center">
-            <span className="text-4xl font-bold text-primary-600/30 dark:text-primary-400/30">
+          <div className="flex h-full min-h-[16rem] w-full items-center justify-center">
+            <span className="text-5xl font-bold text-primary-600/30 dark:text-primary-400/30">
               {post.title.charAt(0)}
             </span>
           </div>
