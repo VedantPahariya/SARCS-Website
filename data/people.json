@@ -3,181 +3,147 @@
     {
       "id": "faculty-1",
       "name": "Prof. Priyesh Shukla",
-      "photo": "/images/people/john-smith.svg",
+      "photo": "/images/people/Priyesh.jpg",
+      "photoPosition": "50% 40%",
       "role": "faculty",
       "designation": "Associate Professor, Principal Investigator",
-      "bio": "Prof. John Smith leads the SARCS Laboratory at Example University. His research interests span computer architecture, in-memory computing, and hardware accelerators. He received his PhD from Stanford University and has published over 100 papers in top venues. He is a recipient of the NSF CAREER Award and IEEE TCCA Young Computer Architect Award.",
+      "bio": "Prof. Priyesh Shukla leads the SARCS Laboratory at IIIT Hyderabad. His research interests span computer architecture, in-memory computing, and hardware accelerators. He received his PhD from University of Illinois Chicago and has published in top venues like Nature Communications, TCAS-1, DATE, ICASSP, TVLSI, ISCAS and others.",
       "researchInterests": ["In-Memory Computing", "RISC-V", "Hardware Accelerators", "AI Systems"],
       "links": {
-        "email": "john.smith@example.edu",
+        "email": "priyesh.shukla@iiit.ac.in",
         "linkedin": "https://www.linkedin.com/in/priyesh-shukla-97b278218/",
-        "googleScholar": "https://scholar.google.com/citations?user=on_nvPYAAAAJ",
-        "github": "https://github.com/johnsmith",
-        "twitter": "https://twitter.com/johnsmith",
-        "website": "https://johnsmith.example.edu",
-        "orcid": "https://orcid.org/0000-0000-0000-0000"
+        "googleScholar": "https://scholar.google.com/citations?hl=en&user=on_nvPYAAAAJ&view_op=list_works&sortby=pubdate",
+        "github": "https://github.com/priyeshshukla",
+        "website": "https://priyeshshukla.github.io/"
       }
     }
   ],
   "phd": [
     {
       "id": "phd-1",
-      "name": "Alice Johnson",
-      "photo": "/images/people/alice-johnson.svg",
+      "name": "Sirisha",
+      "photo": "/images/gallery/placeholder.svg",
+      "photoPosition": "50% 40%",
       "role": "phd",
       "designation": "PhD Candidate",
       "program": "PhD",
-      "yearJoined": 2021,
-      "researchInterests": ["In-Memory Computing", "ReRAM", "Neural Network Accelerators"],
+      "yearJoined": 2025,
+      "researchInterests": ["LLM Accelerators", "AI for Healthcare"],
       "links": {
-        "email": "alice.johnson@example.edu",
-        "linkedin": "https://linkedin.com/in/alice-johnson",
-        "googleScholar": "https://scholar.google.com/citations?user=PLACEHOLDER",
-        "github": "https://github.com/alicejohnson"
-      }
-    },
-    {
-      "id": "phd-2",
-      "name": "Bob Williams",
-      "photo": "/images/people/bob-williams.svg",
-      "role": "phd",
-      "designation": "PhD Student",
-      "program": "PhD",
-      "yearJoined": 2022,
-      "researchInterests": ["RISC-V", "Hardware Security", "Trusted Execution"],
-      "links": {
-        "email": "bob.williams@example.edu",
-        "linkedin": "https://linkedin.com/in/bob-williams",
-        "github": "https://github.com/bobwilliams"
-      }
-    },
-    {
-      "id": "phd-3",
-      "name": "Carol Davis",
-      "photo": "/images/people/carol-davis.svg",
-      "role": "phd",
-      "designation": "PhD Student",
-      "program": "PhD",
-      "yearJoined": 2023,
-      "researchInterests": ["AI Systems", "Neural Architecture Search", "Edge Computing"],
-      "links": {
-        "email": "carol.davis@example.edu",
-        "linkedin": "https://linkedin.com/in/carol-davis",
-        "github": "https://github.com/caroldavis"
+        "email": "sirisha.a@research.iiit.ac.in"
       }
     }
   ],
   "masters": [
     {
       "id": "ms-1",
-      "name": "David Lee",
-      "photo": "/images/people/david-lee.svg",
-      "role": "masters",
+      "name": "Jayadeep K",
+      "photo": "/images/people/Jayadeep.jpg",
+      "photoPosition": "50% 25%",
+      "role": "ms",
       "designation": "MS Student",
       "program": "MS",
-      "yearJoined": 2024,
-      "researchInterests": ["Signal Processing", "FPGA Design", "5G Systems"],
+      "yearJoined": 2025,
+      "researchInterests": ["Quantum Computing"],
       "links": {
-        "email": "david.lee@example.edu",
-        "linkedin": "https://linkedin.com/in/david-lee",
-        "github": "https://github.com/davidlee"
+        "email": "koya.jayadeep@research.iiit.ac.in",
+        "linkedin": "https://www.linkedin.com/in/jayadeep-k-0b073822a/"
       }
     },
     {
       "id": "ms-2",
-      "name": "Eve Martinez",
-      "photo": "/images/people/eve-martinez.svg",
-      "role": "masters",
+      "name": "Lokendra Singh",
+      "photo": "/images/people/Lokendra.jpg",
+      "photoPosition": "50% 0%",
+      "role": "ms",
       "designation": "MS Student",
       "program": "MS",
-      "yearJoined": 2024,
-      "researchInterests": ["Cryptography", "RISC-V", "Low-Power Design"],
+      "yearJoined": 2023,
+      "researchInterests": ["Quantum Computing"],
       "links": {
-        "email": "eve.martinez@example.edu",
-        "linkedin": "https://linkedin.com/in/eve-martinez",
-        "github": "https://github.com/evemartinez"
+        "email": "lokendra.kanawat@research.iiit.ac.in",
+        "linkedin": "https://www.linkedin.com/in/lokendra-singh-kanawat-a08339246/"
       }
     }
   ],
   "undergraduate": [
     {
-      "id": "ug-1",
-      "name": "Frank Chen",
-      "photo": "/images/people/frank-chen.svg",
-      "role": "undergraduate",
+      "id": "dd-1",
+      "name": "Vedant Pahariya",
+      "photo": "/images/people/Vedant.jpg",
+      "photoPosition": "50% 0%",
+      "role": "dual-degree",
       "designation": "Undergraduate Researcher",
-      "program": "BTech",
+      "program": "ECD",
       "yearJoined": 2025,
-      "researchInterests": ["Machine Learning", "Model Compression"],
+      "researchInterests": ["RISC-V", "Computer Architecture"],
       "links": {
-        "email": "frank.chen@example.edu",
-        "github": "https://github.com/frankchen"
+        "email": "vedant.pahariya@research.iiit.ac.in",
+        "linkedin": "https://www.linkedin.com/in/vedant-pahariya/",
+        "github": "https://github.com/VedantPahariya"
+      }
+    },
+    {
+      "id": "dd-2",
+      "name": "Priyanshi Jain",
+      "photo": "/images/people/Priyanshi.jpg",
+      "photoPosition": "50% 50%",
+      "role": "dual-degree",
+      "designation": "Undergraduate Researcher",
+      "program": "ECD",
+      "yearJoined": 2025,
+      "researchInterests": [""],
+      "links": {
+        "email": "priyanshi.jain@research.iiit.ac.in",
+        "linkedin":"https://www.linkedin.com/in/priyanshi-jain-hf/",
+        "github": "https://github.com/illusion8064"
+      }
+    },
+    {
+      "id": "ug-1",
+      "name": "Siddarth G",
+      "photo": "/images/people/Siddarth.jpg",
+      "photoPosition": "50% 50%",
+      "role": "honors",
+      "designation": "Undergraduate Researcher",
+      "program": "ECE",
+      "yearJoined": 2025,
+      "researchInterests": ["In-Memory Computing", "Hardware Accelerators", "Computer Architecture"],
+      "links": {
+        "email": "siddarth.g@students.iiit.ac.in",
+        "github": "https://github.com/iamsid44",
+        "linkedin": "https://www.linkedin.com/in/siddarth-gottumukkula-741b23285/"
       }
     },
     {
       "id": "ug-2",
-      "name": "Grace Wang",
-      "photo": "/images/people/grace-wang.svg",
-      "role": "undergraduate",
+      "name": "M P Samartha",
+      "photo": "/images/people/Samartha.jpg",
+      "photoPosition": "50% 0%",
+      "role": "honors",
       "designation": "Undergraduate Researcher",
-      "program": "BTech",
+      "program": "ECE",
       "yearJoined": 2025,
-      "researchInterests": ["Signal Processing", "Hardware Design"],
+      "researchInterests": ["In-Memory Computing", "Hardware Accelerators"],
       "links": {
-        "email": "grace.wang@example.edu",
-        "github": "https://github.com/gracewang"
+        "email": "samartha.m@students.iiit.ac.in",
+        "github": "https://github.com/samarthamp",
+        "linkedin": "https://www.linkedin.com/in/samartha-mp/"
       }
     }
   ],
   "alumni": [
     {
       "id": "alumni-1",
-      "name": "Dr. Henry Brown",
-      "photo": "/images/people/henry-brown.svg",
+      "name": "TBA",
+      "photo": "/images/people/TBA.svg",
+      "photoPosition": "50% 40%",
       "role": "alumni",
-      "designation": "PhD Graduate",
-      "graduationYear": 2024,
-      "currentAffiliation": "Research Scientist at NVIDIA",
+      "designation": "TBA",
+      "graduationYear": "TBA",
+      "currentAffiliation": "TBA",
       "links": {
-        "linkedin": "https://linkedin.com/in/henry-brown",
-        "googleScholar": "https://scholar.google.com/citations?user=PLACEHOLDER"
-      }
-    },
-    {
-      "id": "alumni-2",
-      "name": "Dr. Isabella Kim",
-      "photo": "/images/people/isabella-kim.svg",
-      "role": "alumni",
-      "designation": "PhD Graduate",
-      "graduationYear": 2023,
-      "currentAffiliation": "Assistant Professor at MIT",
-      "links": {
-        "linkedin": "https://linkedin.com/in/isabella-kim",
-        "website": "https://isabella-kim.mit.edu"
-      }
-    },
-    {
-      "id": "alumni-3",
-      "name": "James Park",
-      "photo": "/images/people/james-park.svg",
-      "role": "alumni",
-      "designation": "MS Graduate",
-      "graduationYear": 2024,
-      "currentAffiliation": "Hardware Engineer at Apple",
-      "links": {
-        "linkedin": "https://linkedin.com/in/james-park"
-      }
-    },
-    {
-      "id": "alumni-4",
-      "name": "Karen Liu",
-      "photo": "/images/people/karen-liu.svg",
-      "role": "alumni",
-      "designation": "MS Graduate",
-      "graduationYear": 2023,
-      "currentAffiliation": "ML Engineer at Google",
-      "links": {
-        "linkedin": "https://linkedin.com/in/karen-liu"
+        "linkedin": "TBA"
       }
     }
   ]

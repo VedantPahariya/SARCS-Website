@@ -56,11 +56,21 @@ export function StudentCard({ student }: StudentCardProps) {
     <Card hover className="text-center">
       {/* Photo */}
       <div className="mb-4 flex justify-center">
-        {/* PLACEHOLDER: Replace with actual student photo */}
         <div className="h-24 w-24 overflow-hidden rounded-full bg-surface-200 dark:bg-surface-700">
-          <div className="flex h-full w-full items-center justify-center text-2xl font-bold text-surface-400 dark:text-surface-500">
-            {student.name.split(' ').map(n => n[0]).join('')}
-          </div>
+          {student.photo ? (
+            <Image
+              src={student.photo}
+              alt={student.name}
+              width={96}
+              height={96}
+              className="h-full w-full object-cover"
+              style={{ objectPosition: student.photoPosition || '50% 40%' }}
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center text-2xl font-bold text-surface-400 dark:text-surface-500">
+              {student.name.split(' ').map(n => n[0]).join('')}
+            </div>
+          )}
         </div>
       </div>
 
@@ -86,25 +96,38 @@ export function StudentCard({ student }: StudentCardProps) {
       {/* Research Interests */}
       {student.researchInterests && student.researchInterests.length > 0 && (
         <div className="mt-3 flex flex-wrap justify-center gap-1">
-          {student.researchInterests.slice(0, 2).map((interest) => (
+          {student.researchInterests.map((interest) => (
             <Badge key={interest} variant="neutral" size="sm">
-              {interest.length > 20 ? interest.slice(0, 18) + '...' : interest}
+              {interest}
             </Badge>
           ))}
         </div>
       )}
 
-      {/* Email and LinkedIn Links */}
-      {(student.links.email || student.links.linkedin) && (
-        <div className="mt-4 flex justify-center gap-1">
-          {student.links.email && (
-            <EmailButton email={student.links.email} size="sm" />
-          )}
-          {student.links.linkedin && (
-            <SocialLink platform="linkedin" href={student.links.linkedin} size="sm" />
-          )}
-        </div>
-      )}
+      {/* Social Links */}
+      <div className="mt-4 flex flex-wrap justify-center gap-1">
+        {student.links.email && (
+          <EmailButton email={student.links.email} size="sm" />
+        )}
+        {student.links.linkedin && (
+          <SocialLink platform="linkedin" href={student.links.linkedin} size="sm" />
+        )}
+        {student.links.googleScholar && (
+          <SocialLink platform="googleScholar" href={student.links.googleScholar} size="sm" />
+        )}
+        {student.links.github && (
+          <SocialLink platform="github" href={student.links.github} size="sm" />
+        )}
+        {student.links.website && (
+          <SocialLink platform="website" href={student.links.website} size="sm" />
+        )}
+        {student.links.twitter && (
+          <SocialLink platform="twitter" href={student.links.twitter} size="sm" />
+        )}
+        {student.links.orcid && (
+          <SocialLink platform="orcid" href={student.links.orcid} size="sm" />
+        )}
+      </div>
     </Card>
   );
 }
@@ -128,9 +151,20 @@ export function StudentListCompact({ students }: StudentListCompactProps) {
         >
           {/* Photo */}
           <div className="h-12 w-12 flex-shrink-0 overflow-hidden rounded-full bg-surface-200 dark:bg-surface-700">
-            <div className="flex h-full w-full items-center justify-center text-sm font-bold text-surface-400 dark:text-surface-500">
-              {student.name.split(' ').map(n => n[0]).join('')}
-            </div>
+            {student.photo ? (
+              <Image
+                src={student.photo}
+                alt={student.name}
+                width={48}
+                height={48}
+                className="h-full w-full object-cover"
+                style={{ objectPosition: student.photoPosition || '50% 40%' }}
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-sm font-bold text-surface-400 dark:text-surface-500">
+                {student.name.split(' ').map(n => n[0]).join('')}
+              </div>
+            )}
           </div>
 
           {/* Info */}

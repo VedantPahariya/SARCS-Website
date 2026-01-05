@@ -29,11 +29,21 @@ export function FacultyCard({ faculty }: FacultyCardProps) {
       <div className="flex flex-col gap-6 md:flex-row">
         {/* Photo */}
         <div className="flex-shrink-0">
-          {/* PLACEHOLDER: Replace with actual faculty photo */}
           <div className="mx-auto h-48 w-48 overflow-hidden rounded-xl bg-surface-200 dark:bg-surface-700 md:mx-0">
-            <div className="flex h-full w-full items-center justify-center text-4xl font-bold text-surface-400 dark:text-surface-500">
-              {faculty.name.split(' ').map(n => n[0]).join('')}
-            </div>
+            {faculty.photo ? (
+              <Image
+                src={faculty.photo}
+                alt={faculty.name}
+                width={192}
+                height={192}
+                className="h-full w-full object-cover"
+                style={{ objectPosition: faculty.photoPosition || '50% 40%' }}
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-4xl font-bold text-surface-400 dark:text-surface-500">
+                {faculty.name.split(' ').map(n => n[0]).join('')}
+              </div>
+            )}
           </div>
         </div>
 

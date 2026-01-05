@@ -46,6 +46,7 @@ export interface Person {
   id: string;
   name: string;
   photo: string; // Path to image
+  photoPosition?: string; // CSS object-position value, e.g., '50% 33%', '50% 0%', 'center'
   role: PersonRole;
   designation?: string; // e.g., "PhD Candidate", "Assistant Professor"
   bio?: string;

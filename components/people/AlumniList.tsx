@@ -5,6 +5,7 @@
  * Shows where alumni are now.
  */
 
+import Image from 'next/image';
 import { SocialIcons } from '@/components/ui';
 import type { Person } from '@/types';
 
@@ -49,11 +50,22 @@ interface AlumniCardProps {
 export function AlumniCard({ alumni }: AlumniCardProps) {
   return (
     <div className="flex items-start gap-3 rounded-lg border border-surface-200 bg-white p-4 dark:border-surface-700 dark:bg-surface-800">
-      {/* Photo placeholder */}
+      {/* Photo */}
       <div className="h-10 w-10 flex-shrink-0 overflow-hidden rounded-full bg-surface-200 dark:bg-surface-700">
-        <div className="flex h-full w-full items-center justify-center text-xs font-bold text-surface-400 dark:text-surface-500">
-          {alumni.name.split(' ').map(n => n[0]).join('')}
-        </div>
+        {alumni.photo ? (
+          <Image
+            src={alumni.photo}
+            alt={alumni.name}
+            width={40}
+            height={40}
+            className="h-full w-full object-cover"
+            style={{ objectPosition: alumni.photoPosition || '50% 40%' }}
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center text-xs font-bold text-surface-400 dark:text-surface-500">
+            {alumni.name.split(' ').map(n => n[0]).join('')}
+          </div>
+        )}
       </div>
 
       {/* Info */}
