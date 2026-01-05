@@ -22,19 +22,9 @@
     },
     "affiliations": [
       {
-        "name": "Example University",
-        "logo": "/images/affiliations/university.svg",
-        "url": "https://example.edu"
-      },
-      {
-        "name": "Research Institute",
-        "logo": "/images/affiliations/institute.svg",
-        "url": "https://research-institute.org"
-      },
-      {
-        "name": "Industry Partner",
-        "logo": "/images/affiliations/partner.svg",
-        "url": "https://industry-partner.com"
+        "name": "IIIT Hyderabad",
+        "logo": "/images/affiliations/IIIT_Hyderabad_Logo.jpg",
+        "url": "https://www.iiit.ac.in/"
       }
     ]
   }

@@ -29,13 +29,23 @@ export function AffiliationsSection({ affiliations }: AffiliationsSectionProps) 
           href={affiliation.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center justify-center opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+          className="group flex items-center justify-center transition-all duration-300 hover:scale-110"
           title={affiliation.name}
         >
-          {/* PLACEHOLDER: Replace with actual affiliation logos */}
-          <div className="flex h-16 w-32 items-center justify-center rounded-lg bg-surface-200 text-sm font-medium text-surface-600 dark:bg-surface-700 dark:text-surface-300">
-            {affiliation.name}
-          </div>
+          {affiliation.logo ? (
+            <Image
+              src={affiliation.logo}
+              alt={`${affiliation.name} logo`}
+              width={320}
+              height={160}
+              className="max-h-32 w-auto object-contain bg-transparent shadow-none transition-transform rounded-2xl"
+              style={{ background: 'none' }}
+            />
+          ) : (
+            <div className="flex h-16 w-32 items-center justify-center rounded-lg bg-surface-200 text-sm font-medium text-surface-600 dark:bg-surface-700 dark:text-surface-300">
+              {affiliation.name}
+            </div>
+          )}
         </a>
       ))}
     </div>

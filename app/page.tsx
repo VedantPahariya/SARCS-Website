@@ -46,7 +46,7 @@ export default function HomePage() {
       />
 
       {/* News Section */}
-      <Section>
+      <Section className="pb-4">
         <SectionHeader
           title="Latest News"
           subtitle="Recent updates, publications, and announcements from the lab."
@@ -55,17 +55,17 @@ export default function HomePage() {
       </Section>
 
       {/* Inspirational Quote */}
-      <Section className="py-8 md:py-12">
+      <div className="container-page py-4">
         <Quote
           text="Research is to see what everybody else has seen, and to think what nobody else has thought."
           author="Albert Szent-Györgyi"
           title="Nobel Laureate in Physiology"
           variant="centered"
         />
-      </Section>
+      </div>
 
       {/* Affiliations Section */}
-      <Section className="pt-0">
+      <Section className="pt-4">
         <SectionHeader
           title="Our Affiliations"
           subtitle="Proud to be part of these institutions and collaborations."

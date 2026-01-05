@@ -15,16 +15,16 @@ const labInfo = {
   name: 'SARCS Lab',
   fullName: 'Sustainable, Advanced and Robust Computing Systems',
   address: [
-    'Room 123, Research Building',
-    'Department of Computer Science',
-    'Example University',
-    'City, State 12345',
+    'Room 318, Vindhya Building, Research Street,',
+    'Center for VLSI and Embedded Systems Technologies',
+    'International Institute of Information Technology Hyderabad',
+    'Hyderabad, Telangana 500032',
   ],
-  email: 'sarcs-lab@example.edu',
+  email: 'priyesh.shukla@iiit.ac.in',
   socialLinks: {
-    linkedin: 'https://linkedin.com/in/professor-name',
+    linkedin: 'https://www.linkedin.com/in/priyesh-shukla-97b278218/',
     github: 'https://github.com/sarcs-lab',
-    googleScholar: 'https://scholar.google.com/citations?user=PLACEHOLDER',
+    googleScholar: 'https://scholar.google.com/citations?user=on_nvPYAAAAJ',
   },
 };
 

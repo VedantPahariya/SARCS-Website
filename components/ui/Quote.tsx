@@ -46,11 +46,11 @@ export function Quote({
   if (variant === 'centered') {
     return (
       <blockquote className={`text-center ${className}`}>
-        <QuoteIcon className="mx-auto mb-4 h-8 w-8 text-primary-300 dark:text-primary-600" />
+        <QuoteIcon className="mx-auto mb-2 h-8 w-8 text-primary-300 dark:text-primary-600" />
         <p className="mx-auto max-w-3xl text-xl italic text-surface-700 dark:text-surface-300 md:text-2xl">
           &ldquo;{text}&rdquo;
         </p>
-        <footer className="mt-4 text-surface-500 dark:text-surface-400">
+        <footer className="mt-2 text-surface-500 dark:text-surface-400">
           <cite className="not-italic font-medium text-surface-900 dark:text-surface-100">
             {author}
           </cite>
