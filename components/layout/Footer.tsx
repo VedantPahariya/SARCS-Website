@@ -18,7 +18,7 @@ const labInfo = {
     'Room 318, Vindhya Building, Research Street,',
     'Center for VLSI and Embedded Systems Technologies,',
     'International Institute of Information Technology Hyderabad,',
-    'Hyderabad, Telangana 500032',
+    'Telangana 500032',
   ],
   email: 'priyesh.shukla@iiit.ac.in',
   socialLinks: {
