@@ -5,7 +5,7 @@
  * Displays hero, news, highlights, stats, and affiliations.
  */
 
-import { Section, SectionHeader } from '@/components/ui';
+import { Section, SectionHeader, Quote } from '@/components/ui';
 import {
   HeroSection,
   NewsSection,
@@ -54,8 +54,18 @@ export default function HomePage() {
         <NewsSection news={news} maxItems={5} />
       </Section>
 
+      {/* Inspirational Quote */}
+      <Section className="py-8 md:py-12">
+        <Quote
+          text="Research is to see what everybody else has seen, and to think what nobody else has thought."
+          author="Albert Szent-Györgyi"
+          title="Nobel Laureate in Physiology"
+          variant="centered"
+        />
+      </Section>
+
       {/* Affiliations Section */}
-      <Section>
+      <Section className="pt-0">
         <SectionHeader
           title="Our Affiliations"
           subtitle="Proud to be part of these institutions and collaborations."

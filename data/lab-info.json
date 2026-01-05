@@ -1,7 +1,7 @@
 {
   "lab": {
     "name": "SARCS Lab",
-    "fullName": "Systems Architecture and Research Computing Systems Laboratory",
+    "fullName": "Sustainable, Advanced and Robust Computing Systems",
     "logo": "/images/logo.svg",
     "mission": "The SARCS Laboratory is dedicated to advancing the frontiers of computer architecture, hardware-software co-design, and emerging computing paradigms. Our research spans in-memory computing, RISC-V architectures, hardware accelerators, and AI systems, with a focus on developing efficient, scalable, and sustainable computing solutions for next-generation applications.",
     "address": [

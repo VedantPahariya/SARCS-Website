@@ -13,7 +13,7 @@ import { SocialLink, EmailButton } from '@/components/ui';
 // In production, this would come from data/lab-info.json
 const labInfo = {
   name: 'SARCS Lab',
-  fullName: 'Systems Architecture and Research Computing Systems Laboratory',
+  fullName: 'Sustainable, Advanced and Robust Computing Systems',
   address: [
     'Room 123, Research Building',
     'Department of Computer Science',
@@ -36,7 +36,6 @@ const quickLinks = [
   { label: 'Blog', href: '/blog' },
   { label: 'Media', href: '/media' },
   { label: 'People', href: '/people' },
-  { label: 'Contact', href: '/contact' },
 ];
 
 /**
@@ -89,7 +88,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links (merged) */}
-          <div>
+          <div className="text-center">
             <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-surface-900 dark:text-surface-100">
               Quick Links
             </h3>

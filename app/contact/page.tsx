@@ -25,9 +25,10 @@ export const metadata: Metadata = {
 /**
  * Contact Page Component
  * 
- * Two-column layout with:
- * - Contact information (left)
- * - Open positions (right)
+ * Stacked vertical layout with:
+ * - Contact information (top)
+ * - Open positions (bottom)
+ * Both sections centered
  */
 export default function ContactPage() {
   return (
@@ -37,29 +38,33 @@ export default function ContactPage() {
         description="Get in touch with our lab or explore opportunities to join our research team."
       />
 
+      {/* Contact Info Section */}
       <Section>
-        <div className="grid gap-8 lg:grid-cols-2">
-          {/* Contact Info - Left */}
-          <div>
-            <SectionHeader
-              title="Get in Touch"
-              subtitle="We'd love to hear from you."
-            />
+        <div className="mx-auto max-w-2xl text-center">
+          <SectionHeader
+            title="Get in Touch"
+            subtitle="We'd love to hear from you."
+            align="center"
+          />
+          <div className="flex justify-center">
             <ContactInfo
               address={labInfo.address}
               email={labInfo.email}
               phone={labInfo.phone}
             />
           </div>
+        </div>
+      </Section>
 
-          {/* Openings - Right */}
-          <div>
-            <SectionHeader
-              title="Join Our Team"
-              subtitle="Current openings and opportunities."
-            />
-            <OpeningsSection openings={openings} />
-          </div>
+      {/* Openings Section */}
+      <Section className="pt-0">
+        <div className="mx-auto max-w-2xl text-center">
+          <SectionHeader
+            title="Join Our Team"
+            subtitle="Current openings and opportunities."
+            align="center"
+          />
+          <OpeningsSection openings={openings} />
         </div>
       </Section>
     </>

@@ -34,12 +34,12 @@ export function PublicationFilters({ publications }: PublicationFiltersProps) {
 
   // Extract unique values for filter options
   const years = useMemo(() => {
-    const uniqueYears = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
+    const uniqueYears = Array.from(new Set(publications.map((p) => p.year))).sort((a, b) => b - a);
     return [{ value: 'all', label: 'All Years' }, ...uniqueYears.map((y) => ({ value: String(y), label: String(y) }))];
   }, [publications]);
 
   const types = useMemo(() => {
-    const uniqueTypes = [...new Set(publications.map((p) => p.type))];
+    const uniqueTypes = Array.from(new Set(publications.map((p) => p.type)));
     return [
       { value: 'all', label: 'All Types' },
       ...uniqueTypes.map((t) => ({ value: t, label: t.charAt(0).toUpperCase() + t.slice(1) })),
@@ -47,7 +47,7 @@ export function PublicationFilters({ publications }: PublicationFiltersProps) {
   }, [publications]);
 
   const tags = useMemo(() => {
-    const uniqueTags = [...new Set(publications.flatMap((p) => p.tags))].sort();
+    const uniqueTags = Array.from(new Set(publications.flatMap((p) => p.tags))).sort();
     return [{ value: 'all', label: 'All Topics' }, ...uniqueTags.map((t) => ({ value: t, label: t }))];
   }, [publications]);
 

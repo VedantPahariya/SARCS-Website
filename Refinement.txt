@@ -1,0 +1,16 @@
+1) Background image in Hero section
+2) Remove Research Stats section from home page
+3) Remove Research highlights section from home page
+4) Remove YouTube and Twitter from the footer. Make the footer smaller in size. Merge Quick links and More sections in the footer. 
+5) In the 'Research' dropdown, It's good to have 'All Research Areas' on top. For individual topics, have them indented under 'All Researh Areas' itself.
+6) In the top menu, reorder the pages to the following order. 
+	Home, Research, Publications, Resources, Blogs, Media, People, Contact
+7) In the 'People' tab, have only the email, linkedin, google scholar and personal website for the professor. For all the students, just have linkedin. There need not be separate headers for Undergrad students, masters students, PhD students and the Faculty since we are already mentioning it in the profile under their name/photo. SO, remove those sub headers.
+8) In the 'Research" tab, instead of showing blue underline in entire content for the hyperlink, just bulge up the card 
+
+
+2nd round
+1) In the 'Research" tab, Remove blue underlines in entire content for the hyperlink, just bulge up the card
+2) Separate the contents of blog and contact page. center align the blog page and in the contact page, put contact us and join our team in left-right,just like it is now
+3) In People page, add the email alongside linkedin. when hovered over the email, show the email id and copy when clicked. Do this for all emails across the website, including professors email option
+4) Color code the social media links according to their natural appearance like whatsapp is green, linkedin is blue. Use the pastels colors and implement it across everywhere in the platform

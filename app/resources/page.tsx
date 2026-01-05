@@ -6,7 +6,7 @@
  */
 
 import type { Metadata } from 'next';
-import { PageHeader, Section } from '@/components/ui';
+import { PageHeader, Section, Quote } from '@/components/ui';
 import { ResourceList } from '@/components/resources';
 import type { Resource } from '@/types';
 
@@ -38,6 +38,16 @@ export default function ResourcesPage() {
 
       <Section>
         <ResourceList resources={resources} />
+      </Section>
+
+      {/* Inspirational Quote */}
+      <Section className="py-8 md:py-12">
+        <Quote
+          text="Talk is cheap. Show me the code."
+          author="Linus Torvalds"
+          title="Creator of Linux"
+          variant="centered"
+        />
       </Section>
     </>
   );

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'SARCS Lab',
-    description: 'Systems Architecture and Research Computing Systems Laboratory',
+    description: 'Sustainable, Advanced and Robust Computing Systems',
     // PLACEHOLDER: Add actual Twitter handle
     // creator: '@sarcs_lab',
   },

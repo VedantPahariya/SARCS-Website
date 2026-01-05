@@ -15,3 +15,4 @@ export { SocialIcons, SingleSocialLink } from './SocialIcons';
 export { Section, SectionHeader, PageHeader, Divider } from './Section';
 export { EmailButton } from './EmailButton';
 export { SocialLink, getPlatformFromKey } from './SocialLink';
+export { Quote, QuoteCarousel } from './Quote';

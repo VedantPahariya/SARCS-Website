@@ -19,7 +19,7 @@ interface OpeningsSectionProps {
  * - Position type and title
  * - Description and requirements
  * - Deadline info
- * - Contact email
+ * - Contact email npm run build
  */
 export function OpeningsSection({ openings }: OpeningsSectionProps) {
   // Filter to only show open positions
@@ -81,19 +81,14 @@ export function OpeningCard({ opening }: OpeningCardProps) {
     : null;
 
   return (
-    <Card>
+    <Card className="text-left">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="flex-1">
-          {/* Header */}
-          <div className="mb-2 flex items-center gap-3">
+          {/* Header - Position Type Badge Only */}
+          <div className="mb-2">
             <Badge variant={typeColors[opening.type] || 'neutral'} size="md">
               {opening.type}
             </Badge>
-            {opening.isOpen && (
-              <Badge variant="success" size="sm" dot>
-                Open
-              </Badge>
-            )}
           </div>
 
           {/* Title */}

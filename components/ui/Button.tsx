@@ -12,7 +12,6 @@ type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline' | 'link';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 interface BaseButtonProps {
-  children: ReactNode;
   variant?: ButtonVariant;
   size?: ButtonSize;
   className?: string;
@@ -29,6 +28,7 @@ interface ButtonAsLink extends BaseButtonProps {
   as: 'link';
   href: string;
   external?: boolean;
+  children: ReactNode;
 }
 
 type ButtonProps = ButtonAsButton | ButtonAsLink;

@@ -37,12 +37,23 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
       <Link href={`/projects/${project.slug}`}>
         <Card hover className="group h-full">
           <div className="flex items-start gap-4">
-            {/* Icon/Image placeholder */}
-            <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary-100 dark:bg-primary-900/30">
-              {/* PLACEHOLDER: Replace with actual project icon */}
-              <span className="text-lg font-bold text-primary-600 dark:text-primary-400">
-                {project.title.charAt(0)}
-              </span>
+            {/* Image placeholder */}
+            <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-lg bg-primary-100 dark:bg-primary-900/30">
+              {project.image ? (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
+              ) : (
+                // PLACEHOLDER: Replace with actual project image
+                <div className="flex h-full w-full items-center justify-center">
+                  <span className="text-lg font-bold text-primary-600 dark:text-primary-400">
+                    {project.title.charAt(0)}
+                  </span>
+                </div>
+              )}
             </div>
 
             <div className="min-w-0 flex-1">
@@ -62,17 +73,25 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
   return (
     <Link href={`/projects/${project.slug}`}>
       <Card hover className="group h-full">
-        {/* Header */}
-        <div className="mb-4 flex items-start justify-between">
-          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 dark:bg-primary-900/30">
-            {/* PLACEHOLDER: Replace with actual project icon/image */}
-            <span className="text-2xl font-bold text-primary-600 dark:text-primary-400">
-              {project.title.charAt(0)}
-            </span>
+        {/* Header with Image */}
+        <div className="mb-4">
+          <div className="relative h-40 w-full overflow-hidden rounded-xl bg-primary-100 dark:bg-primary-900/30">
+            {project.image ? (
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover transition-transform group-hover:scale-105"
+              />
+            ) : (
+              // PLACEHOLDER: Replace with actual project image
+              <div className="flex h-full w-full items-center justify-center">
+                <span className="text-4xl font-bold text-primary-600/50 dark:text-primary-400/50">
+                  {project.title.charAt(0)}
+                </span>
+              </div>
+            )}
           </div>
-          <Badge variant={statusColors[project.status]} size="sm" dot>
-            {project.status.charAt(0).toUpperCase() + project.status.slice(1)}
-          </Badge>
         </div>
 
         {/* Title */}

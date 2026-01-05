@@ -30,7 +30,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
 
   // Get unique categories
   const categories = useMemo(() => {
-    const unique = [...new Set(items.map((item) => item.category))];
+    const unique = Array.from(new Set(items.map((item) => item.category)));
     return ['all', ...unique];
   }, [items]);
 

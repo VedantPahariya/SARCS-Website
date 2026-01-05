@@ -6,7 +6,7 @@
  */
 
 import type { Metadata } from 'next';
-import { PageHeader, Section } from '@/components/ui';
+import { PageHeader, Section, Quote } from '@/components/ui';
 import { ProjectGrid, ResearchAreaTabs } from '@/components/projects';
 import type { Project } from '@/types';
 
@@ -44,6 +44,16 @@ export default function ProjectsPage() {
 
         {/* Project Grid */}
         <ProjectGrid projects={projects} />
+      </Section>
+
+      {/* Inspirational Quote */}
+      <Section className="py-8 md:py-12">
+        <Quote
+          text="The science of today is the technology of tomorrow."
+          author="Edward Teller"
+          title="Theoretical Physicist"
+          variant="centered"
+        />
       </Section>
     </>
   );

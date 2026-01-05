@@ -26,7 +26,8 @@ const typeIcons: Record<Resource['type'], typeof Github> = {
  * ResourceCard Component
  * 
  * Resource display with:
- * - Title and description
+ * - Image/Icon on left
+ * - Title and description on right
  * - Type icon
  * - Tags
  * - External link
@@ -36,13 +37,13 @@ export function ResourceCard({ resource }: ResourceCardProps) {
 
   return (
     <Card hover className="group">
-      <div className="flex gap-4">
-        {/* Icon */}
-        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary-100 dark:bg-primary-900/30">
-          <Icon className="h-6 w-6 text-primary-600 dark:text-primary-400" />
+      <div className="flex gap-6">
+        {/* Left: Image/Icon Section */}
+        <div className="flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30">
+          <Icon className="h-10 w-10 text-primary-600 dark:text-primary-400" />
         </div>
 
-        {/* Content */}
+        {/* Right: Content */}
         <div className="min-w-0 flex-1">
           {/* Title */}
           <h4 className="font-semibold text-surface-900 group-hover:text-primary-600 dark:text-surface-50 dark:group-hover:text-primary-400">
@@ -61,28 +62,32 @@ export function ResourceCard({ resource }: ResourceCardProps) {
             {resource.description}
           </p>
 
-          {/* Tags */}
-          {resource.tags && resource.tags.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1">
-              {resource.tags.map((tag) => (
-                <Badge key={tag} variant="neutral" size="sm">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-          )}
-        </div>
+          {/* Tags and Link Row */}
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+            {/* Tags */}
+            {resource.tags && resource.tags.length > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {resource.tags.map((tag) => (
+                  <Badge key={tag} variant="neutral" size="sm">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+            )}
 
-        {/* External link icon */}
-        <a
-          href={resource.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-shrink-0 text-surface-400 transition-colors group-hover:text-primary-600 dark:group-hover:text-primary-400"
-          aria-label={`Open ${resource.title}`}
-        >
-          <ExternalLink className="h-5 w-5" />
-        </a>
+            {/* External link */}
+            <a
+              href={resource.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-sm font-medium text-primary-600 transition-colors hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300"
+              aria-label={`Open ${resource.title}`}
+            >
+              View Resource
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
       </div>
     </Card>
   );
