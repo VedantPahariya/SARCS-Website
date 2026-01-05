@@ -16,8 +16,8 @@ const labInfo = {
   fullName: 'Sustainable, Advanced and Robust Computing Systems',
   address: [
     'Room 318, Vindhya Building, Research Street,',
-    'Center for VLSI and Embedded Systems Technologies',
-    'International Institute of Information Technology Hyderabad',
+    'Center for VLSI and Embedded Systems Technologies,',
+    'International Institute of Information Technology Hyderabad,',
     'Hyderabad, Telangana 500032',
   ],
   email: 'priyesh.shukla@iiit.ac.in',

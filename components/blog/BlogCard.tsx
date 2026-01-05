@@ -4,6 +4,7 @@
  * Purpose: Display blog post entries with links to external content.
  */
 
+import Image from 'next/image';
 import { Card, Badge, BadgeGroup } from '@/components/ui';
 import { Calendar, ExternalLink, User } from 'lucide-react';
 import type { BlogPost } from '@/types';
@@ -37,12 +38,20 @@ export function BlogCard({ post, imagePosition = 'left' }: BlogCardProps) {
       <div className={`flex flex-col gap-6 md:flex-row ${isRight ? 'md:flex-row-reverse' : ''}`}>
         {/* Image Section */}
         <div className="relative h-64 w-full flex-shrink-0 overflow-hidden rounded-xl bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 md:h-auto md:w-80">
-          {/* PLACEHOLDER: Replace with actual blog post image */}
-          <div className="flex h-full min-h-[16rem] w-full items-center justify-center">
-            <span className="text-5xl font-bold text-primary-600/30 dark:text-primary-400/30">
-              {post.title.charAt(0)}
-            </span>
-          </div>
+          {post.image ? (
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover"
+            />
+          ) : (
+            <div className="flex h-full min-h-[16rem] w-full items-center justify-center">
+              <span className="text-5xl font-bold text-primary-600/30 dark:text-primary-400/30">
+                {post.title.charAt(0)}
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Content Section */}

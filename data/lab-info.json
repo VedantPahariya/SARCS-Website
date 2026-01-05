@@ -5,14 +5,13 @@
     "logo": "/images/logo.svg",
     "mission": "The SARCS Laboratory is dedicated to advancing the frontiers of computer architecture, hardware-software co-design, and emerging computing paradigms. Our research spans in-memory computing, RISC-V architectures, hardware accelerators, and AI systems, with a focus on developing efficient, scalable, and sustainable computing solutions for next-generation applications.",
     "address": [
-      "Room 123, Research Building",
-      "Department of Computer Science",
-      "Example University",
-      "City, State 12345",
-      "Country"
+      "Room 318, Vindhya Building, Research Street,",
+      "Center for VLSI and Embedded Systems Technologies,",
+      "International Institute of Information Technology Hyderabad",
+      "Hyderabad, Telangana - 500032",
+      "India"
     ],
-    "email": "sarcs-lab@example.edu",
-    "phone": "+1 (123) 456-7890",
+    "email": "priyesh.shukla@iiit.ac.in",
     "socialLinks": {
       "linkedin": "https://linkedin.com/in/professor-name",
       "twitter": "https://twitter.com/sarcs_lab",

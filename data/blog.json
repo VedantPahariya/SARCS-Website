@@ -1,47 +1,12 @@
 [
   {
     "id": "blog-1",
-    "title": "Understanding In-Memory Computing: A Primer",
-    "date": "2025-11-15",
-    "description": "An introduction to in-memory computing concepts, benefits, and current research directions. This post covers the basics of IMC architecture and why it's important for future computing systems.",
-    "link": "https://blog.example.edu/imc-primer",
-    "author": "Prof. John Smith",
-    "tags": ["In-Memory Computing", "Tutorial", "Computer Architecture"]
-  },
-  {
-    "id": "blog-2",
-    "title": "Getting Started with RISC-V Development",
-    "date": "2025-09-20",
-    "description": "A beginner's guide to RISC-V processor development. We cover toolchain setup, simulation environments, and resources for learning RISC-V architecture.",
-    "link": "https://blog.example.edu/riscv-getting-started",
-    "author": "Bob Williams",
-    "tags": ["RISC-V", "Tutorial", "Open Source"]
-  },
-  {
-    "id": "blog-3",
-    "title": "Our Experience at ISCA 2025",
-    "date": "2025-07-01",
-    "description": "Reflections on our lab's participation at the International Symposium on Computer Architecture (ISCA) 2025, including paper presentations and networking highlights.",
-    "link": "https://blog.example.edu/isca-2025-experience",
-    "author": "Alice Johnson",
-    "tags": ["Conference", "ISCA", "Research Life"]
-  },
-  {
-    "id": "blog-4",
-    "title": "Hardware-Aware Neural Architecture Search Explained",
-    "date": "2025-05-10",
-    "description": "Deep dive into hardware-aware NAS techniques and how we optimize neural networks for efficient edge deployment. Includes code examples and practical tips.",
-    "link": "https://blog.example.edu/hw-nas-explained",
-    "author": "Carol Davis",
-    "tags": ["AI Systems", "NAS", "Edge Computing", "Tutorial"]
-  },
-  {
-    "id": "blog-5",
-    "title": "Summer Internship Experience at SARCS Lab",
-    "date": "2025-08-15",
-    "description": "Reflections from our summer interns on their research experiences, projects, and what they learned during their time at SARCS Lab.",
-    "link": "https://blog.example.edu/summer-internship-2025",
-    "author": "Summer Interns 2025",
-    "tags": ["Internship", "Student Life", "Research Experience"]
+    "title": "Priyesh Shukla on insect-sized drones and life on the Edge",
+    "date": "2025-9-22",
+    "description": "IIITH’s Prof. Priyesh Shukla, a Ph.D from the University of Illinois talks about exciting work on insect-sized drones and life on the Edge. He brings youthful energy and industrial R&D experience to his work in sustainable AI and Quantum Computing Systems at IIITH’s Center for VLSI and Embedded Systems Technology and Computer Systems Group.",
+    "link": "https://blogs.iiit.ac.in/priyesh-shukla/",
+    "author": "Prof. Priyesh Shukla",
+    "tags": ["In-Memory Computing", "Computer Architecture"],
+    "image": "/images/blog/blog-1.jpg"
   }
 ]
