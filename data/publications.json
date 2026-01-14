@@ -10,7 +10,7 @@
     "links": {
       "pdf": "/papers/isca-2026-imc.pdf",
       "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
-      "code": "https://github.com/sarcs-lab/imc-accelerator",
+      "code": "https://github.com/SARCS-Research-Group-IIITH/imc-accelerator",
       "doi": "https://doi.org/10.1145/xxxxxx"
     },
     "type": "conference"
@@ -26,7 +26,7 @@
     "links": {
       "pdf": "/papers/micro-2025-securerisc.pdf",
       "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
-      "code": "https://github.com/sarcs-lab/securerisc"
+      "code": "https://github.com/SARCS-Research-Group-IIITH/securerisc"
     },
     "type": "conference"
   },
@@ -54,7 +54,7 @@
     "tags": ["AI Systems", "Neural Architecture Search", "Edge Computing", "Model Optimization"],
     "links": {
       "pdf": "/papers/tcad-2025-nas.pdf",
-      "code": "https://github.com/sarcs-lab/hw-nas",
+      "code": "https://github.com/SARCS-Research-Group-IIITH/hw-nas",
       "doi": "https://doi.org/10.1109/xxxxxx"
     },
     "type": "journal"
@@ -111,7 +111,7 @@
     "tags": ["Hardware Accelerators", "Post-Quantum Cryptography", "FPGA", "Lattice Cryptography"],
     "links": {
       "pdf": "/papers/tches-2024-pqc.pdf",
-      "code": "https://github.com/sarcs-lab/pqc-accelerator"
+      "code": "https://github.com/SARCS-Research-Group-IIITH/pqc-accelerator"
     },
     "type": "journal"
   },
@@ -126,7 +126,7 @@
     "links": {
       "pdf": "/papers/neurips-2023-transformers.pdf",
       "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
-      "code": "https://github.com/sarcs-lab/edge-transformers"
+      "code": "https://github.com/SARCS-Research-Group-IIITH/edge-transformers"
     },
     "type": "conference"
   },

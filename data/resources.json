@@ -4,7 +4,7 @@
     "title": "IMC Accelerator Framework",
     "description": "Open-source framework for designing and simulating in-memory computing accelerators. Includes cycle-accurate simulators and RTL generators.",
     "category": "Open Source Tools",
-    "link": "https://github.com/sarcs-lab/imc-accelerator",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/imc-accelerator",
     "type": "github",
     "tags": ["In-Memory Computing", "Simulator", "RTL"]
   },
@@ -13,7 +13,7 @@
     "title": "RISC-V Core Collection",
     "description": "Collection of custom RISC-V processor cores with various extensions. Includes documentation, testbenches, and FPGA support.",
     "category": "Code Repositories",
-    "link": "https://github.com/sarcs-lab/riscv-cores",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/riscv-cores",
     "type": "github",
     "tags": ["RISC-V", "Processor Design", "Verilog"]
   },
@@ -22,7 +22,7 @@
     "title": "Edge AI Toolkit",
     "description": "Tools for deploying neural networks on edge devices. Includes quantization, pruning, and optimization utilities.",
     "category": "Open Source Tools",
-    "link": "https://github.com/sarcs-lab/edge-ai-toolkit",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/edge-ai-toolkit",
     "type": "github",
     "tags": ["AI Systems", "Edge Computing", "Model Optimization"]
   },
@@ -31,7 +31,7 @@
     "title": "Hardware-Aware NAS Benchmark",
     "description": "Benchmark dataset and evaluation framework for hardware-aware neural architecture search methods.",
     "category": "Datasets",
-    "link": "https://github.com/sarcs-lab/hw-nas-benchmark",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/hw-nas-benchmark",
     "type": "dataset",
     "tags": ["NAS", "Benchmark", "Machine Learning"]
   },
@@ -40,7 +40,7 @@
     "title": "PQC Accelerator RTL",
     "description": "RTL implementation of post-quantum cryptography accelerators for Kyber and Dilithium algorithms.",
     "category": "Code Repositories",
-    "link": "https://github.com/sarcs-lab/pqc-accelerator",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/pqc-accelerator",
     "type": "github",
     "tags": ["Cryptography", "FPGA", "Security"]
   },
@@ -67,7 +67,7 @@
     "title": "DSP Cores Library",
     "description": "Reusable digital signal processing cores including FFT, FIR filters, and CORDIC implementations.",
     "category": "Code Repositories",
-    "link": "https://github.com/sarcs-lab/dsp-cores",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/dsp-cores",
     "type": "github",
     "tags": ["Signal Processing", "RTL", "FPGA"]
   },
@@ -76,7 +76,7 @@
     "title": "IMC Characterization Dataset",
     "description": "Measurement data from ReRAM and MRAM device characterization for in-memory computing research.",
     "category": "Datasets",
-    "link": "https://github.com/sarcs-lab/imc-device-data",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/imc-device-data",
     "type": "dataset",
     "tags": ["In-Memory Computing", "Device Characterization", "ReRAM"]
   },
@@ -85,7 +85,7 @@
     "title": "Lab Documentation Wiki",
     "description": "Internal documentation covering lab tools, workflows, and best practices. Useful for new lab members.",
     "category": "Documentation",
-    "link": "https://github.com/sarcs-lab/lab-wiki",
+    "link": "https://github.com/SARCS-Research-Group-IIITH/lab-wiki",
     "type": "documentation",
     "tags": ["Documentation", "Onboarding"]
   }

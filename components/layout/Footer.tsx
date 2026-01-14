@@ -23,7 +23,7 @@ const labInfo = {
   email: 'priyesh.shukla@iiit.ac.in',
   socialLinks: {
     linkedin: 'https://www.linkedin.com/in/priyesh-shukla-97b278218/',
-    github: 'https://github.com/sarcs-lab',
+    github: 'https://github.com/SARCS-Research-Group-IIITH',
     googleScholar: 'https://scholar.google.com/citations?user=on_nvPYAAAAJ',
   },
 };
@@ -33,7 +33,7 @@ const quickLinks = [
   { label: 'Research', href: '/projects' },
   { label: 'Publications', href: '/publications' },
   { label: 'Resources', href: '/resources' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Blogs', href: '/blog' },
   { label: 'Media', href: '/media' },
   { label: 'People', href: '/people' },
 ];

@@ -16,7 +16,7 @@ import blogData from '@/data/blog.json';
 const blogPosts = blogData as BlogPost[];
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Blogs',
   description: 'Read our blog posts, tutorials, research insights, and lab updates.',
 };
 
@@ -31,7 +31,7 @@ export default function BlogPage() {
   return (
     <>
       <PageHeader
-        title="Blog"
+        title="Blogs"
         description="Tutorials, research insights, and updates from our lab."
       />
 

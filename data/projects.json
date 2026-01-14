@@ -15,7 +15,7 @@
       "Hardware-software co-design for IMC"
     ],
     "links": {
-      "github": "https://github.com/sarcs-lab/imc-accelerator",
+      "github": "https://github.com/SARCS-Research-Group-IIITH/imc-accelerator",
       "paper": "https://arxiv.org/abs/xxxx.xxxxx",
       "documentation": "https://sarcs-lab.github.io/imc-docs"
     },
@@ -38,7 +38,7 @@
       "Open-source processor development"
     ],
     "links": {
-      "github": "https://github.com/sarcs-lab/riscv-core",
+      "github": "https://github.com/SARCS-Research-Group-IIITH/riscv-core",
       "documentation": "https://sarcs-lab.github.io/riscv-docs"
     },
     "status": "active",
@@ -60,7 +60,7 @@
       "Dataflow architectures"
     ],
     "links": {
-      "github": "https://github.com/sarcs-lab/dla-framework"
+      "github": "https://github.com/SARCS-Research-Group-IIITH/dla-framework"
     },
     "status": "active",
     "startYear": 2021
@@ -81,7 +81,7 @@
       "Low-latency communication systems"
     ],
     "links": {
-      "github": "https://github.com/sarcs-lab/dsp-cores"
+      "github": "https://github.com/SARCS-Research-Group-IIITH/dsp-cores"
     },
     "status": "ongoing",
     "startYear": 2019
@@ -102,7 +102,7 @@
       "AI compiler optimizations"
     ],
     "links": {
-      "github": "https://github.com/sarcs-lab/edge-ai-toolkit",
+      "github": "https://github.com/SARCS-Research-Group-IIITH/edge-ai-toolkit",
       "demo": "https://sarcs-lab.github.io/ai-demo"
     },
     "status": "active",

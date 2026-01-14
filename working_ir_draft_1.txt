@@ -1,0 +1,189 @@
+// IR Sensor Test Code with Lookup Tables
+// SHARP IR Sensor Pins
+#define IR_LEFT 33    // Left SHARP GP2Y0A51SK0F (2-15cm)
+#define IR_MIDDLE 32  // Middle SHARP GP2Y0A21SK0F (10-80cm)
+#define IR_RIGHT 35   // Right SHARP GP2Y0A51SK0F (2-15cm)
+
+// Kalman Filter Structure
+struct KalmanFilter {
+  double estimate;
+  double errorCovariance;
+  double processNoise;
+  double measurementNoise;
+};
+
+// Initialize Kalman filters for each sensor
+KalmanFilter leftKalman = {0, 1.0, 0.01, 0.1};
+KalmanFilter middleKalman = {0, 1.0, 0.01, 0.1};
+KalmanFilter rightKalman = {0, 1.0, 0.01, 0.1};
+
+// Kalman Filter Function
+double kalmanFilter(double measurement, KalmanFilter *filter) {
+  // Prediction step
+  double predictedEstimate = filter->estimate;
+  double predictedErrorCovariance = filter->errorCovariance + filter->processNoise;
+
+  // Update step
+  double kalmanGain = predictedErrorCovariance / (predictedErrorCovariance + filter->measurementNoise);
+  filter->estimate = predictedEstimate + kalmanGain * (measurement - predictedEstimate);
+  filter->errorCovariance = (1 - kalmanGain) * predictedErrorCovariance;
+
+  return filter->estimate;
+}
+
+// Side sensors (Left and Right) - SHORT RANGE (2-15cm)
+// Uses SHARP GP2Y0A51SK0F sensor characteristics
+double measureSideDistance(int analogPin, KalmanFilter *kalmanFilterInstance = nullptr) {
+  int rawValue = analogRead(analogPin);
+
+  // Lookup table for side sensors (analog value -> cm)
+  const int lookupSize = 11;
+  const int analogValues[lookupSize] = {2500, 1500, 880, 600, 450, 405, 370, 330, 300, 150, 100};
+  const double distances[lookupSize] = {1.0, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0, 17.5, 20.0, 35.0, 45.0};
+
+  double rawDistance = 0;
+
+  // If value is lower than minimum in table (100), distance > 45cm
+  if (rawValue < 100) {
+    rawDistance = 50.0;
+  }
+  // If value is higher than maximum in table (2500), distance = 1cm
+  else if (rawValue > 2500) {
+    rawDistance = 1.0;
+  }
+  else {
+    // Find two neighboring values and interpolate
+    for (int i = 0; i < lookupSize - 1; i++) {
+      if (rawValue <= analogValues[i] && rawValue > analogValues[i + 1]) {
+        // Linear interpolation
+        double proportion = (double)(rawValue - analogValues[i + 1]) / (analogValues[i] - analogValues[i + 1]);
+        rawDistance = distances[i] + (1.0 - proportion) * (distances[i + 1] - distances[i]);
+        break;
+      }
+    }
+
+    // Fallback if no matching value found
+    if (rawDistance == 0) {
+      rawDistance = 15.0;
+    }
+  }
+
+  // Apply Kalman filter if provided
+  if (kalmanFilterInstance != nullptr) {
+    return kalmanFilter(rawDistance, kalmanFilterInstance);
+  }
+
+  return rawDistance;
+}
+
+// Middle sensor - LONG RANGE (10-80cm)
+// Uses SHARP GP2Y0A21SK0F sensor characteristics
+double measureMiddleDistance(int analogPin, KalmanFilter *kalmanFilterInstance = nullptr) {
+  int rawValue = analogRead(analogPin);
+
+  // Lookup table for middle sensor (analog value -> cm)
+  const int lookupSize = 8;
+  const int analogValues[lookupSize] = {2000, 1200, 750, 500, 375, 300, 200, 150};
+  const double distances[lookupSize] = {5, 10, 15, 20, 25, 30, 35, 40};
+
+  double rawDistance = 0;
+
+  // If value is lower than minimum in table (150), distance = 70cm
+  if (rawValue < 150) {
+    rawDistance = 70.0;
+  }
+  // If value is higher than maximum in table (2000), distance = 5cm
+  else if (rawValue > 2000) {
+    rawDistance = 5.0;
+  }
+  else {
+    // Find two neighboring values and interpolate
+    for (int i = 0; i < lookupSize - 1; i++) {
+      if (rawValue <= analogValues[i] && rawValue > analogValues[i + 1]) {
+        // Linear interpolation
+        double proportion = (double)(rawValue - analogValues[i + 1]) / (analogValues[i] - analogValues[i + 1]);
+        rawDistance = distances[i + 1] + proportion * (distances[i] - distances[i + 1]);
+        break;
+      }
+    }
+
+    // Fallback if no matching value found
+    if (rawDistance == 0) {
+      rawDistance = 60000.0 * pow(rawValue, -1.05) + 3.0;
+    }
+  }
+
+  // Apply Kalman filter if provided
+  if (kalmanFilterInstance != nullptr) {
+    return kalmanFilter(rawDistance, kalmanFilterInstance);
+  }
+
+  return rawDistance;
+}
+
+void setup() {
+  Serial.begin(115200);
+  
+  // Configure analog pins as inputs
+  pinMode(IR_LEFT, INPUT);
+  pinMode(IR_MIDDLE, INPUT);
+  pinMode(IR_RIGHT, INPUT);
+  
+  Serial.println("IR Sensor Test Program");
+  Serial.println("======================");
+  Serial.println("Left & Right: SHARP GP2Y0A51SK0F (2-15cm range)");
+  Serial.println("Middle: SHARP GP2Y0A21SK0F (10-80cm range)");
+  Serial.println();
+  delay(2000);
+}
+
+void loop() {
+  // Read raw analog values
+  int rawLeft = analogRead(IR_LEFT);
+  int rawMiddle = analogRead(IR_MIDDLE);
+  int rawRight = analogRead(IR_RIGHT);
+  
+  // Get distances without Kalman filter
+  double distLeft = measureSideDistance(IR_LEFT);
+  double distMiddle = measureMiddleDistance(IR_MIDDLE);
+  double distRight = measureSideDistance(IR_RIGHT);
+  
+  // Get distances with Kalman filter
+  double distLeftFiltered = measureSideDistance(IR_LEFT, &leftKalman);
+  double distMiddleFiltered = measureMiddleDistance(IR_MIDDLE, &middleKalman);
+  double distRightFiltered = measureSideDistance(IR_RIGHT, &rightKalman);
+  
+  // Display results
+  Serial.println("=== IR Sensor Readings ===");
+  Serial.println();
+  
+  Serial.print("LEFT   | Raw: ");
+  Serial.print(rawLeft);
+  Serial.print(" | Distance: ");
+  Serial.print(distLeft, 1);
+  Serial.print(" cm | Filtered: ");
+  Serial.print(distLeftFiltered, 1);
+  Serial.println(" cm");
+  
+  Serial.print("MIDDLE | Raw: ");
+  Serial.print(rawMiddle);
+  Serial.print(" | Distance: ");
+  Serial.print(distMiddle, 1);
+  Serial.print(" cm | Filtered: ");
+  Serial.print(distMiddleFiltered, 1);
+  Serial.println(" cm");
+  
+  Serial.print("RIGHT  | Raw: ");
+  Serial.print(rawRight);
+  Serial.print(" | Distance: ");
+  Serial.print(distRight, 1);
+  Serial.print(" cm | Filtered: ");
+  Serial.print(distRightFiltered, 1);
+  Serial.println(" cm");
+  
+  Serial.println();
+  Serial.println("---------------------------");
+  Serial.println();
+  
+  delay(500); // Update every 500ms
+}

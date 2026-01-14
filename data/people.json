@@ -92,7 +92,7 @@
       "designation": "Undergraduate Researcher",
       "program": "ECD",
       "yearJoined": 2025,
-      "researchInterests": [""],
+      "researchInterests": ["RISC-V", "Compilers"],
       "links": {
         "email": "priyanshi.jain@research.iiit.ac.in",
         "linkedin":"https://www.linkedin.com/in/priyanshi-jain-hf/",
@@ -126,7 +126,7 @@
       "yearJoined": 2025,
       "researchInterests": ["In-Memory Computing", "Hardware Accelerators"],
       "links": {
-        "email": "samartha.m@students.iiit.ac.in",
+        "email": "m.samartha@students.iiit.ac.in",
         "github": "https://github.com/samarthamp",
         "linkedin": "https://www.linkedin.com/in/samartha-mp/"
       }
